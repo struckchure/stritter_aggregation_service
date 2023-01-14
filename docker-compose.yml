@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ${PWD}/build/python/Dockerfile
+    volumes:
+      - .:/home/user/app
+      - pip_volume:/home/user/.local/lib/python3.10/site-packages
+    ports:
+      - ${API_PORT}:${API_PORT}
+
+volumes:
+  pip_volume:
