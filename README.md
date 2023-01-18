@@ -1,6 +1,6 @@
-# stritt_service
+# aggregation_service
 
-Stritt service for stritter.
+Aggregation service for stritter.
 
 ## Installation
 
