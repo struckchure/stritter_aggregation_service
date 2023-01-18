@@ -18,3 +18,6 @@ def get_var(key: str, default: Any = None) -> int | str:
 API_PORT: int = int(get_var("API_PORT", 8000))
 
 DEBUG: bool = bool(int(get_var("DEBUG", 1)))
+
+AUTH_SERVICE_URL = str(get_var("AUTH_SERVICE_URL"))
+STRIT_SERVICE_URL = str(get_var("STRIT_SERVICE_URL"))
